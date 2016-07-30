@@ -1,10 +1,3 @@
-# powerdns-salt
-
-Salt states to set up powerdns (authoritative, recursor, and dnsdist) on Debian.
-
-## top.sls usage
-
-```
 base:
   'G@os:debian and G@roles:pdns-server':
     - match: compound
@@ -17,4 +10,3 @@ base:
   'G@os:debian and G@roles:dnsdist':
     - match: compound
     - roles.dnsdist
-```
